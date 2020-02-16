@@ -15,4 +15,4 @@
 
 
 # Demo
-![](pathfinder-demo.gif)
+![](weatherApp-demo.gif)
