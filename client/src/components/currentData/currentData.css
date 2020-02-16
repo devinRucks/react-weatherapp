@@ -1,0 +1,89 @@
+
+.weather-status {
+	font-size: 27px;
+	padding-left: 20px;
+	padding-top: 15px;
+	color: #fff;
+}
+
+#temp-icon-container {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+.temp-large {
+	color: #fff;
+	font-size: 90px;
+}
+
+#icon-large {
+	text-align: center;
+	margin-left: 10px;
+	height: 120px;
+	width: 180px;
+}
+
+.time {
+	color: #fff;
+	font-size: 27px;
+	padding-left: 20px;
+}
+
+.currentSummary {
+	font-family: 'Exo', sans-serif;
+	color: #fff;
+	font-size: 24px;
+	padding-left: 20px;
+	padding-right: 10px;
+	padding-bottom: 5px;
+}
+
+#current-horizontal {
+	width: 90%;
+	height: 2px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color:rgb(164, 164, 164);
+	border: 0 none;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+/* --------------------------------------------- */
+/* ---------------LOADING SYMBOL---------------- */
+/* --------------------------------------------- */
+
+#spinner {
+     height: 300px;
+     width: 400px;
+	text-align: center;
+}
+   
+.lds-dual-ring {
+	display: inline-block;
+	width: 100px;
+	height: 100px;
+}
+
+
+.lds-dual-ring:after {
+	content: " ";
+	display: block;
+	width: 80px;
+	height: 80px;
+	margin: 8px;
+	border-radius: 50%;
+	border: 6px solid #fff;
+	border-color: #fff transparent #fff transparent;
+	animation: lds-dual-ring 1.2s linear infinite;
+}
+	@keyframes lds-dual-ring {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+   

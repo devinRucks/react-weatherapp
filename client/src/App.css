@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css?family=Exo|Rubik:500&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-family: 'Roboto', sans-serif;
+}
+
+body {
+	background: #777;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+#container {
+     position: relative;
+     min-height: 630px;
+     height: 78vh;
+     width: 1400px;
+     margin: auto;
+}
+
+#current-weather-container {
+	height: auto;
+	position: relative;
+	display: inline-block;
+	width: 440px;
+	top: 80px;
+	margin-top: -10px;
+	margin-left: 25px;
+	background: rgba(77, 77, 77, 0.6);
+	border-radius: 25px;
+	border: 2px rgb(38, 38, 38) solid;
+	overflow: auto;
+}
+
+#weekly-weather-container {
+	position: absolute;
+	bottom: 0;
+	height: 120px;
+	width: 100%;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	border-radius: 25px;
+}
+
+.powered-by {
+	position: absolute;
+	z-index: -2;
+	left: 30px;
+	top: 35px;
+	height: 40px;
+	width: 300px;
+	background-image: url('./imgs/poweredByDarkSky.png');
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+
+/* --------------------------------------------- */
+/* ---------------- SEARCH BAR ----------------- */
+/* --------------------------------------------- */
+
+#search-container {
+	position: absolute;
+	width: 100%;
+     padding: 40px 40px 0 0;
+	display: flex;
+	justify-content: flex-end;
+}
+
+.location-search-input {
+	height: 50px;
+	width: 250px;
+	border: 2px rgb(51, 51, 51, .8) solid;
+	border-radius: 20px;
+	font-size: 22px;
+	padding-left: 7px;
+	padding-right: 10px;
+	background: rgba(106, 106, 106, 1);
+	color: #fff;
+	outline: none;
+}
+.location-search-input::placeholder {
+	color: rgba(206, 206, 206, 0.7);
+}
+
+.autocomplete-dropdown-container {
+	width: 250px;
+	border-radius: 10px;
+	background: rgba(106, 106, 106, 1);
+	color: #fff;
+}
+
+.suggestion-item--active {
+	padding-left: 5px;
+	background: rgb(125, 125, 125);
+	cursor: pointer;
+	border-radius: 5px;
+}
+
+.suggestion-item {
+	padding-left: 5px;
+	background: rgb(106, 106, 106);
+	cursor: pointer;
+	border-radius: 5px;
+}
